@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Data
 Imports System.Configuration
 Imports System.Collections
@@ -14,11 +13,12 @@ Imports DevExpress.Web.ASPxGridView
 Namespace FormViewAsDetail
 	Partial Public Class _Default
 		Inherits System.Web.UI.Page
+
 		Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 
 		End Sub
 		Protected Sub FormView1_DataBinding(ByVal sender As Object, ByVal e As EventArgs)
-			Dim fv As FormView = CType(sender, FormView)
+			Dim fv As FormView = DirectCast(sender, FormView)
 			Dim row As GridViewDetailRowTemplateContainer = CType(fv.Parent, GridViewDetailRowTemplateContainer)
 			fv.DataSource = SqlDataSource2
 			SqlDataSource2.SelectParameters("CategoryID").DefaultValue = row.KeyValue.ToString()
