@@ -5,6 +5,9 @@
 * [Default.aspx.cs](./CS/FormViewAsDetail/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/FormViewAsDetail/Default.aspx.vb))
 <!-- default file list end -->
 # How to use the FormView component to display details of a master-detail ASPxGridView
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e529/)**
+<!-- run online end -->
 
 
 <p>This example demonstrates how to place a standard FormView component into the DetailRow template and bind it to detail data of a master-detail ASPxGridView.</p><p><strong>See also:</strong><br />
